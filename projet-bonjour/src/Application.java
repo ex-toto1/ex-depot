@@ -6,6 +6,8 @@ public class Application {
      */
     
     public static void main(String[] args) {
+        String nom = saisie("Votre nom ? ");
+        System.out.println("Bonjour "+ nom);
     }
 
     /**
@@ -14,7 +16,7 @@ public class Application {
     
     private static String saisie(String message) {
         Scanner scan = new Scanner(System.in);
-        System.out.print(message+" ? ");
+        System.out.print(message);
         return scan.next();
     }
 
